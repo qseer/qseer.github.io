@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.101.0" />
 
-  <title> &middot; My New Hugo Site</title>
+  <title>question &middot; My New Hugo Site</title>
 
     
 
@@ -168,7 +168,7 @@
 
 
 <div class="header">
-  <h1></h1>
+  <h1>question</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -177,7 +177,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>01 Jan 0001, 00:00</time>
+    <time>27 Jun 2022, 16:17</time>
   </div>
 
   
@@ -200,7 +200,7 @@
 <p>换用更优算法；</p>
 <h3 id="2--过拟合">2.  过拟合</h3>
 <p>正则化</p>
-<p><img src="C:%5CUsers%5Cqseer%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220629140155007.png" alt="image-20220629140155007"></p>
+<p><img src="https://s2.loli.net/2022/07/01/Vxg2e6rdL3ysF1P.png" alt="img"></p>
 <h2 id="question-type">Question Type</h2>
 <ul>
 <li>​     <code>关键字</code></li>
@@ -230,9 +230,24 @@
 <li>在问题中说明</li>
 <li>不在问题中说明，在图像中表示</li>
 </ul>
-<p>学长，关于图片方面，我的想法是将图中元素抽象成“点”和“线”。</p>
-<p>点表示的是其中的 Value 或 Index ；线表示互相之间的关系，或操作。</p>
-<p>关于点的识别，值的存储通过目标检测应该比较容易；可如何通过识别线去建立点之间关系，是我现在的疑惑。</p>
+<h2 id="分两类-1">分两类</h2>
+<h3 id="1--询问某位置的值">1.  询问某位置的值</h3>
+<h3 id="2--通过值的大小比较判断">2.  通过值的大小比较判断</h3>
+<h3 id="图像上">图像上：</h3>
+<p>抽取 <code>点</code> 的相互位置关系的特征；</p>
+<p>点可以是：</p>
+<p>独立的封闭空间（有标注框、无标注框）</p>
+<p>借助 <code>线</code> 建立 <code>点</code> 特征</p>
+<p>点的相互位置特征，需满足<strong>平移不变性</strong>、旋转不变形</p>
+<h3 id="文本上">文本上：</h3>
+<p>抽取特征：</p>
+<ol>
+<li>数据类型 —— stack、queque</li>
+<li>询问类型 —— value、quantity、type、operation、value after/before operation</li>
+<li>关键字 —— pop、top、bottom、same、<strong>value</strong></li>
+<li>逻辑词—— is、will、not、cannot、at least</li>
+</ol>
+<p>根据以上建立向量：[ 数据类型，询问类型、关键字、逻辑词 ]</p>
 
   
   <h4><i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
@@ -289,13 +304,13 @@
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://qseer.github.io/post/first/">First</a>
+      <a href="https://qseer.github.io/post/second/">Second</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://qseer.github.io/post/first/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://qseer.github.io/post/second/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
